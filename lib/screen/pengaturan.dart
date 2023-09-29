@@ -49,7 +49,7 @@ class _PengaturanState extends State<Pengaturan> {
               ),
               ElevatedButton(
                 style: ElevatedButton.styleFrom(
-                  primary: Colors.green,
+                  primary: Color.fromARGB(255, 67, 237, 73),
                 ),
                 onPressed: () async {
                   if (oldpasswordController.text.isEmpty ||
@@ -81,13 +81,13 @@ class _PengaturanState extends State<Pengaturan> {
                 },
                 child: Text(
                   "Simpan",
-                  style: TextStyle(color: Colors.black),
+                  style: TextStyle(color: Color.fromARGB(255, 251, 251, 251)),
                 ),
               ),
-              SizedBox(height: 30),
+              SizedBox(height: 10),
               ElevatedButton(
                 style: ElevatedButton.styleFrom(
-                  primary: Colors.blue,
+                  primary: Color.fromARGB(255, 0, 22, 216),
                 ),
                 onPressed: () {
                   print("Simpan diklik");
@@ -98,7 +98,40 @@ class _PengaturanState extends State<Pengaturan> {
                 },
                 child: Text(
                   "Kembali",
-                  style: TextStyle(color: Colors.black),
+                  style: TextStyle(color: Color.fromARGB(255, 253, 253, 253)),
+                ),
+              ),
+
+              SizedBox(height: 250),
+              Container(
+                padding: EdgeInsets.all(20),
+                color: Colors.grey,
+                child: Row(
+                  children: <Widget>[
+                    CircleAvatar(
+                      radius: 40.0,
+                    ),
+                    SizedBox(width: 20.0,),
+
+                    Expanded(
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: <Widget>[
+                          Text(
+                            'About This Application',
+                            style: TextStyle(
+                              fontSize: 20,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                          SizedBox(height: 8),
+                          Text('Aplikasi ini dibuat oleh :'),
+                          Text('Nama : Faiza Nur Abida'),
+                          Text('NIM : 2141764068'),
+                          Text('Tanggal : 29 September 2023'),
+                        ],
+                    )),
+                  ],
                 ),
               ),
             ],

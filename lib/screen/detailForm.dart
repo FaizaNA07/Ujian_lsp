@@ -76,14 +76,14 @@ class _DetailFormState extends State<DetailForm> {
           height: 100,
           child: ElevatedButton(
               style: ElevatedButton.styleFrom(
-                primary: Colors.blue,
+                primary: Color.fromARGB(255, 0, 22, 216),
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(5),
                 ),
               ),
               onPressed: () => Navigator.pop(context),
-              child: const Text('<< Kembali',
-                  style: TextStyle(fontSize: 18, fontWeight: FontWeight.w500))),
+              child: const Text('Kembali',
+                  style: TextStyle(fontSize: 18, fontWeight: FontWeight.w500, color: Colors.white))),
         ),
       ),
     );

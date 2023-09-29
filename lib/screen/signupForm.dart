@@ -32,7 +32,7 @@ class _SignupFormState extends State<SignupFrom> {
                       color: Colors.black,
                       fontSize: 30.0),
                 ),
-                Image.asset("assets/images/logo.png",
+                Image.asset("assets/images/education-cost.png",
                     height: 200.0, width: 200.0),
                 SizedBox(
                   height: 15.0,
@@ -152,7 +152,7 @@ class _SignupFormState extends State<SignupFrom> {
                     },
                   ),
                   decoration: BoxDecoration(
-                    color: Colors.blue,
+                    color: Color.fromARGB(255, 236, 243, 48),
                     borderRadius: BorderRadius.circular(50.0),
                   ),
                 ),

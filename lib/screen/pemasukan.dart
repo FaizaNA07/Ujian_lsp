@@ -62,7 +62,7 @@ class _PemasukanState extends State<Pemasukan> {
               SizedBox(height: 30),
               ElevatedButton(
                 style: ElevatedButton.styleFrom(
-                  primary: Colors.green,
+                  primary: Color.fromARGB(255, 0, 22, 216),
                 ),
                 onPressed: () async {
                   if (tanggalController.text.isEmpty ||
@@ -96,18 +96,18 @@ class _PemasukanState extends State<Pemasukan> {
                 },
                 child: Text(
                   "Simpan",
-                  style: TextStyle(color: Colors.black),
+                  style: TextStyle(color: Color.fromARGB(255, 255, 255, 255)),
                 ),
               ),
               SizedBox(height: 30),
               ElevatedButton(
                 style: ElevatedButton.styleFrom(
-                  primary: Colors.blue,
+                  primary: Color.fromARGB(255, 0, 4, 255),
                 ),
                 onPressed: () async {},
                 child: Text(
                   "Kembali",
-                  style: TextStyle(color: Colors.black),
+                  style: TextStyle(color: Color.fromARGB(255, 254, 254, 254)),
                 ),
               ),
             ],

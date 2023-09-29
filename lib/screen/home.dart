@@ -76,22 +76,19 @@ class _HomeState extends State<Home> {
                   ;
                 }),
             SizedBox(height: 20),
-            Image.asset("assets/images/logo2.png", height: 200.0, width: 200.0),
+            Image.asset("assets/images/grafik.png", height: 200.0, width: 250.0),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
-                InkWell(
+                Card(
+                  margin: EdgeInsets.all(10.0),
+                  child: InkWell(
                   onTap: () {
                     // Navigasi ke halaman "Tambah Pemasukan"
                   },
                   child: Column(
                     children: [
-                      SizedBox(width: 50),
                       // Icon(Icons.add_circle, size: 50, color: Colors.blue),
-                      Text(
-                        "Tambah Pemasukan",
-                        textAlign: TextAlign.center,
-                      ),
                       ElevatedButton(
                         onPressed: () {
                           Navigator.push(
@@ -101,19 +98,29 @@ class _HomeState extends State<Home> {
                                         id_user: widget.id_user,
                                       )));
                         },
-                        child: Icon(Icons.add_circle,
-                            size: 50, color: Colors.blue),
+                        child: Icon(Icons.add_road,
+                            size: 50, color: Color.fromARGB(255, 17, 36, 237)),
+                      ),
+                      Text(
+                        "Tambah Pemasukan",
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                        ),
                       ),
                     ],
                   ),
                 ),
-                InkWell(
+                ),
+                SizedBox(height: 50),
+                Card(
+                  margin: EdgeInsets.all(10.0),
+                  child: InkWell(
                   onTap: () {
                     // Navigasi ke halaman "Tambah Pengeluaran"
                   },
                   child: Column(
                     children: [
-                      Text("Tambah Pengeluaran"),
                       ElevatedButton(
                         onPressed: () {
                           Navigator.push(
@@ -123,11 +130,19 @@ class _HomeState extends State<Home> {
                                         id_user: widget.id_user,
                                       )));
                         },
-                        child: Icon(Icons.remove_circle,
-                            size: 50, color: Colors.orange),
+                        child: Icon(Icons.remove_circle_outlined,
+                            size: 50, color: Color.fromARGB(255, 17, 36, 237)),
+                      ),
+                      Text(
+                        "Tambah Pengeluaran",
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                        ),
                       ),
                     ],
                   ),
+                ),
                 ),
               ],
             ),
@@ -135,13 +150,14 @@ class _HomeState extends State<Home> {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
-                InkWell(
+                Card(
+                  margin: EdgeInsets.all(10.0),
+                  child: InkWell(
                   onTap: () {
                     // Navigasi ke halaman "Detail Cash Flow"
                   },
                   child: Column(
                     children: [
-                      Text("Detail Cash Flow"),
                       ElevatedButton(
                         onPressed: () {
                           Navigator.push(
@@ -151,18 +167,27 @@ class _HomeState extends State<Home> {
                                         id_user: widget.id_user,
                                       )));
                         },
-                        child: Icon(Icons.list, size: 50, color: Colors.purple),
+                        child: Icon(Icons.list, size: 50, color: Color.fromARGB(255, 17, 36, 237)),
+                      ),
+                      Text(
+                        "Detail Cash Flow",
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                        ),
                       ),
                     ],
                   ),
                 ),
-                InkWell(
+                ),
+                Card(
+                  margin: EdgeInsets.all(10.0),
+                  child: InkWell(
                   onTap: () {
                     // Navigasi ke halaman "Pengaturan"
                   },
                   child: Column(
                     children: [
-                      Text("Pengaturan"),
                       ElevatedButton(
                         onPressed: () {
                           Navigator.push(
@@ -173,10 +198,18 @@ class _HomeState extends State<Home> {
                                       )));
                         },
                         child:
-                            Icon(Icons.settings, size: 50, color: Colors.grey),
+                            Icon(Icons.settings, size: 50, color: Color.fromARGB(255, 17, 36, 237)),
+                      ),
+                      Text(
+                        "Pengaturan",
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                        ),
                       ),
                     ],
                   ),
+                ),
                 ),
               ],
             ),
